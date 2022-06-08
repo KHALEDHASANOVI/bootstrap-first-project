@@ -1,0 +1,202 @@
+/* * universal css start */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+/* common css start */
+section {
+  padding: 100px 0px;
+}
+/* ====== hero-area css start ======3 */
+.hero-area {
+  background: url(assets/img/bg-1.jpg) no-repeat center scroll;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.hero-area:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+.hero-area .hero-title-link {
+  color: white;
+}
+.hedder {
+  font-style: italic;
+}
+.hedder h2,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: lime;
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: white;
+  border-radius: 5px;
+}
+.hero-title-link {
+  margin-top: 50px;
+}
+.hero-title-link a {
+  background-color: white;
+  padding: 13px 30px;
+  margin: 15px;
+  border-radius: 25px;
+  font-weight: 700;
+}
+.hero-title-link a:hover {
+  background-color: lime;
+  color: #000;
+}
+.hero-card-area .card {
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+.hero-card-area .card:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+.card-title {
+  font-style: italic;
+}
+.hero-card-area .card-body {
+  padding: 50px 30px;
+}
+/* ====== hero-area css end ====== */
+
+/* clases-area css start */
+.clases-area {
+  background: url(assets/img/bg-2.jpg) no-repeat center fixed;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+.clases-area:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: white;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.clases-card-area .card-title,
+.clases-card-area .card-text {
+  padding: 30px 15px;
+}
+/* clases-area css end */
+
+/* our-gym-area css start */
+.our-gym-area .card-body {
+  padding: 20px 25px;
+}
+.our-gym-area .card-icon {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+.our-gym-area .card-title {
+  font-size: 24px;
+}
+/* our-gym-area css end */
+
+/* gallery-area css start */
+.gallery-area {
+  background: url(assets/img/bg-3.jpg) no-repeat center scroll;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.gallery-area:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+.gallery-area .card {
+  background-color: transparent;
+}
+.gallery-area .card-link {
+  background-color: black;
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+.gallery-area .card-link:hover {
+  background-color: lime;
+  color: black;
+}
+/* gallery-area css end */
+
+/* contact-area css start */
+.contact-area {
+  background: url(assets/img/c-2.jpg) no-repeat center scroll;
+  background-size: cover;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.contact-area:after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  z-index: -1;
+  opacity: 0.5;
+}
+.contact-area h2 {
+  color: aqua;
+}
+.contact-form-area {
+  margin-top: 40px;
+}
+/* contact-area css end */
+
+/* footer css start */
+.footer h2 {
+  color: white;
+}
+.footer {
+  margin-top: 50px;
+  margin-bottom: -80px;
+}
