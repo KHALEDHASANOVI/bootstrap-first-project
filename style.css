@@ -15,6 +15,32 @@ ul {
 section {
   padding: 100px 0px;
 }
+
+/* header-area css start */
+.hedder {
+  font-style: italic;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+.hedder h2,
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:focus {
+  color: white;
+}
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: lime;
+}
+.navbar-light .navbar-toggler-icon {
+  background-color: white;
+  border-radius: 5px;
+}
+/* header-area css end */
+
 /* ====== hero-area css start ======3 */
 .hero-area {
   background: url(assets/img/bg-1.jpg) no-repeat center scroll;
@@ -37,69 +63,61 @@ section {
 .hero-area .hero-title-link {
   color: white;
 }
-.hedder {
-  font-style: italic;
-}
-.hedder h2,
-.navbar-light .navbar-nav .nav-link,
-.navbar-light .navbar-nav .nav-link:focus {
-  color: white;
-}
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link:hover {
-  color: lime;
-}
-.navbar-light .navbar-toggler-icon {
-  background-color: white;
-  border-radius: 5px;
-}
-.hero-title-link {
+.hero-content-link {
   margin-top: 50px;
 }
-.hero-title-link a {
+.hero-content-link a {
   background-color: white;
   padding: 13px 30px;
   margin: 15px;
   border-radius: 25px;
   font-weight: 700;
 }
-.hero-title-link a:hover {
+.hero-content-link a:hover {
   background-color: lime;
   color: #000;
 }
-.hero-card-area .card {
-  background-color: transparent;
+.feature-area {
   position: relative;
-  z-index: 1;
 }
-.hero-card-area .card:after {
+.feature-area:before {
   content: "";
   position: absolute;
-  height: 100%;
   width: 100%;
-  left: 0;
+  height: 100%;
   top: 0;
-  background-color: #000;
+  left: 0;
+  background-color: rgb(44 36 24);
+  color: white;
+  opacity: 0.8;
   z-index: -1;
-  opacity: 0.5;
 }
+
+.feature-area .card {
+  background-color: transparent;
+  position: relative;
+  z-index: 2;
+  background-color: #000;
+  opacity: 0.5;
+  color: white;
+}
+
 .card-title {
   font-style: italic;
 }
-.hero-card-area .card-body {
+.feature-area .card-body {
   padding: 50px 30px;
 }
 /* ====== hero-area css end ====== */
 
-/* clases-area css start */
-.clases-area {
+/* feature-area-two  css start */
+.feature-area-two {
   background: url(assets/img/bg-2.jpg) no-repeat center fixed;
   background-size: cover;
   position: relative;
   z-index: 1;
 }
-.clases-area:after {
+.feature-area-two:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -111,34 +129,38 @@ section {
   opacity: 0.5;
 }
 
-.clases-card-area .card-title,
-.clases-card-area .card-text {
-  padding: 30px 15px;
+.feature-area-two .clases-card-area .card-title,
+.feature-area-two .clases-card-area .card-text {
+  padding: 10px;
 }
-/* clases-area css end */
+.feature-area-two .card-img {
+  width: 100%;
+  height: 200px;
+}
+/* feature-area-two  css end */
 
-/* our-gym-area css start */
-.our-gym-area .card-body {
+/* services-area css start */
+.services-area .card-body {
   padding: 20px 25px;
 }
-.our-gym-area .card-icon {
+.services-area .card-icon {
   font-size: 32px;
   padding-bottom: 10px;
 }
-.our-gym-area .card-title {
+.services-area .card-title {
   font-size: 24px;
 }
-/* our-gym-area css end */
+/* services-area css end */
 
-/* gallery-area css start */
-.gallery-area {
+/* blog-area css start */
+.blog-area {
   background: url(assets/img/bg-3.jpg) no-repeat center scroll;
   background-size: cover;
   color: white;
   position: relative;
   z-index: 1;
 }
-.gallery-area:after {
+.blog-area:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -149,31 +171,35 @@ section {
   z-index: -1;
   opacity: 0.5;
 }
-.gallery-area .card {
+.blog-area .card {
   background-color: transparent;
 }
-.gallery-area .card-link {
+.blog-area .card-link {
   background-color: black;
   color: white;
   font-weight: 700;
   padding: 10px 20px;
   border-radius: 25px;
 }
-.gallery-area .card-link:hover {
+.blog-area .card-link:hover {
   background-color: lime;
   color: black;
 }
-/* gallery-area css end */
+.blog-area .card-img {
+  width: 100%;
+  height: 200px;
+}
+/* blog-area css end */
 
-/* contact-area css start */
-.contact-area {
+/* subscribe-area css start */
+.subscribe-area {
   background: url(assets/img/c-2.jpg) no-repeat center scroll;
   background-size: cover;
   color: white;
   position: relative;
   z-index: 1;
 }
-.contact-area:after {
+.subscribe-area:after {
   content: "";
   position: absolute;
   height: 100%;
@@ -184,19 +210,19 @@ section {
   z-index: -1;
   opacity: 0.5;
 }
-.contact-area h2 {
+.subscribe-area h2 {
   color: aqua;
 }
-.contact-form-area {
+.subscribe-form-area {
   margin-top: 40px;
 }
-/* contact-area css end */
+/* subscribe-area css end */
 
-/* footer css start */
-.footer h2 {
+/* footer-area css start */
+.footer-area h2 {
   color: white;
 }
-.footer {
+.footer-area {
   margin-top: 50px;
   margin-bottom: -80px;
 }
